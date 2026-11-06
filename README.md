@@ -8,10 +8,11 @@ This plugin adds the Reduck MCP server to Hermes.
 
 1. Make a Reduck account at [reduck.ai](https://reduck.ai). To run scripts in your own Chrome, add the Reduck extension and pair it.
 2. Create an API key at [reduck.ai/api-keys](https://reduck.ai/api-keys).
-3. Install the plugin:
+3. Install and enable the plugin:
 
    ```bash
    hermes plugins install reduck
+   hermes plugins enable reduck
    ```
 
 4. Give Hermes the key. In Hermes Desktop, enter it in the settings of the Reduck plugin. In the terminal, add this line to `~/.hermes/.env`:
@@ -19,6 +20,8 @@ This plugin adds the Reduck MCP server to Hermes.
    ```bash
    REDUCK_API_KEY=your-key
    ```
+
+5. If the Hermes gateway is running, restart it so it connects to Reduck: `hermes gateway restart`.
 
 ## Try it
 
